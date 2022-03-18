@@ -38,7 +38,7 @@ const server = new ApolloServer({
     // Пытаемся извлечь пользователя с помощью токена
     const user = getUser(token);
     // Пока что будем выводить информацию о пользователе в консоль:
-    console.log('111', user);
+    console.log('user', user);
     // Добавление моделей БД в контекст
     return { models, user };
   }
